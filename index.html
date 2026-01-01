@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libertinus+Keyboard&family=Sanchez:ital@0;1&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body>
@@ -37,17 +38,17 @@
     <div class="rows">
       <button id="tilde">`</button>
       <button id="1" onclick="doType('1')">1</button>
-      <button id="2">2</button>
-      <button id="3">3</button>
-      <button id="4">4</button>
-      <button id="5">5</button>
-      <button id="6">6</button>
-      <button id="7">7</button>
-      <button id="8">8</button>
-      <button id="9">9</button>
-      <button id="0">0</button>
-      <button id="minus">-</button>
-      <button id="equal">=</button>
+      <button id="2" onclick="doType('2')">2</button>
+      <button id="3" onclick="doType('3')">3</button>
+      <button id="4" onclick="doType('4')">4</button>
+      <button id="5" onclick="doType('5')">5</button>
+      <button id="6" onclick="doType('6')">6</button>
+      <button id="7" onclick="doType('7')">7</button>
+      <button id="8" onclick="doType('8')">8</button>
+      <button id="9" onclick="doType('9')">9</button>
+      <button id="0" onclick="doType('0')">0</button>
+      <button id="minus" onclick="doType('-')">-</button>
+      <button id="equal" onclick="doType('=')">=</button>
       <button id="delete" onclick="deleteKey()">delete</button>
     </div>
     <div class="rows">
@@ -67,7 +68,7 @@
       <button id="backslash">\</button>
     </div>
     <div class="rows">
-      <button id="caps_lock" onclick="document.querySelector('#cll').style.backgroundColor='lightgreen'"><span id="cll"></span><br>caps lock</button>
+      <button id="caps_lock" onclick="glowCapsLock()"><span id="cll"></span><br>caps lock</button>
       <button id="a">A</button>
       <button id="s">S</button>
       <button id="d">D</button>
@@ -96,12 +97,15 @@
       <button id="right_shift">shift</button>
     </div>
     <div class="rows">
-      <button id="fn"><span class="kicon material-symbols-outlined" style="text-align: left;">language</span><span style="text-align: right;">fn</span></button>
+      <button id="fn"><span class="kicon material-symbols-outlined" style="text-align: left;">language</span><span
+          style="text-align: right;">fn</span></button>
       <button id="control"><span class="kicon material-symbols-outlined">keyboard_control_key</span>control</button>
       <button id="left_option"><span class="kicon material-symbols-outlined">keyboard_option_key</span>option</button>
-      <button id="left_command"><span class="kicon material-symbols-outlined">keyboard_command_key</span>command</button>
+      <button id="left_command"><span
+          class="kicon material-symbols-outlined">keyboard_command_key</span>command</button>
       <button id="space"></button>
-      <button id="right_command"><span class="kicon material-symbols-outlined">keyboard_command_key</span>command</button>
+      <button id="right_command"><span
+          class="kicon material-symbols-outlined">keyboard_command_key</span>command</button>
       <button id="right_option"><span class="kicon material-symbols-outlined">keyboard_option_key</span>option</button>
       <button id="left"><span class="kicon material-symbols-outlined">arrow_left</span></button>
 
