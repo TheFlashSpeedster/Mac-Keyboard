@@ -14,6 +14,9 @@
 </head>
 
 <body>
+  <div class="input-container">
+    <input type="text" id="input" placeholder="Start Typing..." value="Demo" readonly>
+  </div>
   <div class="keyboard_container">
     <div class="rows">
       <button id="esc">esc</button>
@@ -33,7 +36,7 @@
     </div>
     <div class="rows">
       <button id="tilde">`</button>
-      <button id="1">1</button>
+      <button id="1" onclick="doType('1')">1</button>
       <button id="2">2</button>
       <button id="3">3</button>
       <button id="4">4</button>
@@ -45,7 +48,7 @@
       <button id="0">0</button>
       <button id="minus">-</button>
       <button id="equal">=</button>
-      <button id="delete">delete</button>
+      <button id="delete" onclick="deleteKey()">delete</button>
     </div>
     <div class="rows">
       <button id="tab">tab</button>
@@ -109,6 +112,7 @@
       <button id="right"><span class="kicon material-symbols-outlined">arrow_right</span></button>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
