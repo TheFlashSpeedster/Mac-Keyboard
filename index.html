@@ -16,7 +16,7 @@
 
 <body>
   <div class="input-container">
-    <input type="text" id="input" placeholder="Start Typing..." value="Demo" readonly>
+    <input type="text" id="input" placeholder="Start Typing..." value="Demo">
   </div>
   <div class="keyboard_container">
     <div class="rows">
@@ -36,7 +36,7 @@
       <div id="power"><button id="power_circle"></button></button></div>
     </div>
     <div class="rows">
-      <button id="tilde">`</button>
+      <button id="tilde" onclick="doType('`')">`</button>
       <button id="1" onclick="doType('1')">1</button>
       <button id="2" onclick="doType('2')">2</button>
       <button id="3" onclick="doType('3')">3</button>
@@ -53,47 +53,47 @@
     </div>
     <div class="rows">
       <button id="tab">tab</button>
-      <button id="q">Q</button>
-      <button id="w">W</button>
-      <button id="e">E</button>
-      <button id="r">R</button>
-      <button id="t">T</button>
-      <button id="y">Y</button>
-      <button id="u">U</button>
-      <button id="i">I</button>
-      <button id="o">O</button>
-      <button id="p">P</button>
-      <button id="open_sqbr">[</button>
-      <button id="close_sqbr">]</button>
-      <button id="backslash">\</button>
+      <button id="q" onclick="doType('q')">Q</button>
+      <button id="w" onclick="doType('w')">W</button>
+      <button id="e" onclick="doType('e')">E</button>
+      <button id="r" onclick="doType('r')">R</button>
+      <button id="t" onclick="doType('t')">T</button>
+      <button id="y" onclick="doType('y')">Y</button>
+      <button id="u" onclick="doType('u')">U</button>
+      <button id="i" onclick="doType('i')">I</button>
+      <button id="o" onclick="doType('o')">O</button>
+      <button id="p" onclick="doType('p')">P</button>
+      <button id="open_sqbr" onclick="doType('[')">[</button>
+      <button id="close_sqbr" onclick="doType(']')">]</button>
+      <button id="backslash" onclick="doType('\\')">\</button>
     </div>
     <div class="rows">
       <button id="caps_lock" onclick="glowCapsLock()"><span id="cll"></span><br>caps lock</button>
-      <button id="a">A</button>
-      <button id="s">S</button>
-      <button id="d">D</button>
-      <button id="f">F</button>
-      <button id="g">G</button>
-      <button id="h">H</button>
-      <button id="j">J</button>
-      <button id="k">K</button>
-      <button id="l">L</button>
-      <button id="semicolon">;</button>
-      <button id="quote">'</button>
-      <button id="return">return</button>
+      <button id="a" onclick="doType('a')">A</button>
+      <button id="s" onclick="doType('s')">S</button>
+      <button id="d" onclick="doType('d')">D</button>
+      <button id="f" onclick="doType('f')">F</button>
+      <button id="g" onclick="doType('g')">G</button>
+      <button id="h" onclick="doType('h')">H</button>
+      <button id="j" onclick="doType('j')">J</button>
+      <button id="k" onclick="doType('k')">K</button>
+      <button id="l" onclick="doType('l')">L</button>
+      <button id="semicolon" onclick="doType(';')">;</button>
+      <button id="quote" onclick="doType('\'')">\'</button>
+      <button id="return" onclick="doType('\n')">return</button>
     </div>
     <div class="rows">
       <button id="left_shift">shift</button>
-      <button id="z">Z</button>
-      <button id="x">X</button>
-      <button id="c">C</button>
-      <button id="v">V</button>
-      <button id="b">B</button>
-      <button id="n">N</button>
-      <button id="m">M</button>
-      <button id="comma">,</button>
-      <button id="period">.</button>
-      <button id="slash">/</button>
+      <button id="z" onclick="doType('z')">Z</button>
+      <button id="x" onclick="doType('x')">X</button>
+      <button id="c" onclick="doType('c')">C</button>
+      <button id="v" onclick="doType('v')">V</button>
+      <button id="b" onclick="doType('b')">B</button>
+      <button id="n" onclick="doType('n')">N</button>
+      <button id="m" onclick="doType('m')">M</button>
+      <button id="comma" onclick="doType(',')">,</button>
+      <button id="period" onclick="doType('.')">.</button>
+      <button id="slash" onclick="doType('/')">/</button>
       <button id="right_shift">shift</button>
     </div>
     <div class="rows">
@@ -103,7 +103,7 @@
       <button id="left_option"><span class="kicon material-symbols-outlined">keyboard_option_key</span>option</button>
       <button id="left_command"><span
           class="kicon material-symbols-outlined">keyboard_command_key</span>command</button>
-      <button id="space"></button>
+      <button id="space" onclick="doType(' ')"></button>
       <button id="right_command"><span
           class="kicon material-symbols-outlined">keyboard_command_key</span>command</button>
       <button id="right_option"><span class="kicon material-symbols-outlined">keyboard_option_key</span>option</button>
