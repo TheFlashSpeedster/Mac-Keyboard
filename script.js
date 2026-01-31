@@ -42,7 +42,7 @@ document.addEventListener('keydown', function(event) {
   // Handle alphabets, numbers, and symbols
   if (key.length === 1) {
     event.preventDefault();
-    doType(key.toLowerCase());
+    doType(key);
   }
 });
 
